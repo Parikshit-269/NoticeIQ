@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoticeIQ</title>
+  <link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/upload"><span class="logo">N</span>NoticeIQ</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav id="nav">
+    <a href="#/upload" data-route="upload">Upload</a>
+    <a href="#/documents" data-route="documents">Documents</a>
+    <a href="#/tasks" data-route="tasks">Tasks</a>
+    <a href="#/compare" data-route="compare">Compare</a>
+  </nav>
+</header>
+
+<main id="view" class="container"></main>
+
+<aside id="evidence" class="drawer" aria-hidden="true">
+  <div class="drawer-head">
+    <h3 id="evTitle">Evidence</h3>
+    <button class="icon-btn" id="evClose" aria-label="Close evidence viewer">✕</button>
+  </div>
+  <div id="evBody" class="drawer-body"></div>
+</aside>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
